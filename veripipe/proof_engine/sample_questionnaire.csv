@@ -1,0 +1,13 @@
+id,framework,reference,question
+Q01,GDPR,Art. 25 / Art. 32,"Is personal data (PII) automatically redacted from prompts before they are transmitted to any third-party LLM provider?"
+Q02,GDPR,Art. 32(1)(d),"Which categories of personal and financial identifiers (email addresses, phone numbers, IBANs, payment card numbers, national identifiers such as PPSN/SSN) are detected, and is detection coverage regularly tested?"
+Q03,GDPR,Art. 5(1)(c),"Do your audit logs apply data minimisation, i.e. are raw prompts and customer personal data excluded from stored log records?"
+Q04,EU AI Act,Art. 12(1),"Does the system automatically record events (logs) for every AI interaction over its lifetime, as required for record-keeping?"
+Q05,EU AI Act,Art. 12(2) / Art. 19,"Can each logged AI interaction be traced to the exact policy version and configuration that was in force at the time?"
+Q06,EU AI Act,Art. 15(5),"What technical controls defend against prompt injection and attempts to manipulate the model into ignoring its instructions or exfiltrating data?"
+Q07,DORA,Art. 17,"Are blocked or policy-violating requests recorded with a timestamp and reason so that ICT-related incidents can be detected, classified and reported?"
+Q08,DORA,Art. 28 / Art. 30(3)(e),"Can we, our auditors or a competent authority independently verify the completeness of your audit trail without relying on vendor attestations (audit rights over ICT third-party providers)?"
+Q09,DORA,Art. 9(2),"Are there enforced usage limits (token and cost ceilings) with an automatic circuit breaker to prevent runaway consumption or denial-of-wallet?"
+Q10,DORA,Art. 28(3),"Is every outbound call to a third-party model provider logged with the provider and model used, supporting our register of information on ICT third-party arrangements?"
+Q11,Security,Log integrity,"Are audit logs cryptographically protected against tampering (e.g. hash-chaining), and how is integrity proven?"
+Q12,Security,Secure SDLC,"How do you detect and remediate application code that calls LLM provider APIs directly, bypassing the security gateway (shadow AI)?"
